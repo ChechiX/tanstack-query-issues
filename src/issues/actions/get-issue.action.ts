@@ -7,8 +7,6 @@ export const getIssue = async( issueNumber: number ): Promise<GithubIssue> => {
   await sleep(1500);
 
   const { data } = await githubApi.get<GithubIssue>(`/issues/${ issueNumber }`);
-  
-  console.log(data);
-  
+    
   return data;
 };
