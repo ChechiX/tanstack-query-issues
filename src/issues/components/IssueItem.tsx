@@ -57,7 +57,6 @@ export const IssueItem = ({ issue }: Props ) => {
           { issue.title }
         </a>
         <span className="text-gray-500">
-          {/* TODO: days ago */}
           #${ issue.number } opened { timeSince( issue.created_at )} ago by{' '}
           <span className="font-bold">{ issue.user.login }</span>
         </span>
